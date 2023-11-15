@@ -1,0 +1,21 @@
+<!-- equipo-form.component.html -->
+
+<form #equipoForm="ngForm" (ngSubmit)="enviar()">
+    <div class="form-group">
+      <label for="nombre">Nombre:</label>
+      <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="equipo.nombre" required>
+    </div>
+  
+    <div class="form-group">
+      <label for="ciudad">Ciudad:</label>
+      <input type="text" class="form-control" id="ciudad" name="ciudad" [(ngModel)]="equipo.ciudad" required>
+    </div>
+  
+    <div class="form-group">
+      <label for="copasInternacionales">Copas Internacionales:</label>
+      <input type="number" class="form-control" id="copasInternacionales" name="copasInternacionales" [(ngModel)]="equipo.copasInternacionales" required>
+    </div>
+  
+    <button type="submit" class="btn btn-primary">Guardar Equipo</button>
+  </form>
+  
